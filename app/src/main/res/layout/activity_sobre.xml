@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="900dp"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/fundo"
+        tools:context=".SobreActivity">
+
+        <Button
+            android:id="@+id/voltarSobreButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/ic_arrow_back_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView4"
+            android:layout_width="360dp"
+
+            android:layout_height="275dp"
+
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginBottom="28dp"
+            app:cardBackgroundColor="@color/fundo"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView17"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+
+                android:layout_marginBottom="15dp"
+
+                android:text="O GeoWiki foi desenvolvido com objetivo de apoiar membros da comunidade acadêmica, especialmente estudantes com dificuldades na área da geologia."
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="125dp"
+                android:layout_marginEnd="15dp"
+
+                android:text="O APP oferece diversas funcionalidades que auxiliam na compreensão dos processos relacionados às rochas e seus componentes, facilitando o aprendizado sobre o tema. "
+                android:textSize="18dp" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="93dp"
+            android:layout_marginTop="38dp"
+            android:layout_marginEnd="166dp"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="sans-serif-light"
+            android:text="Sobre"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/cardView4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/voltarSobreButton"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView5"
+            android:layout_width="360dp"
+
+            android:layout_height="135dp"
+
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginBottom="20dp"
+            app:cardBackgroundColor="@color/marromclarinho"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/cardView6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <Button
+                android:id="@+id/saibaMaisButton"
+
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+
+
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="85dp"
+                android:backgroundTint="@color/marromescuro"
+                android:fontFamily="sans-serif-light"
+                android:text="Saiba mais" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="131dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/dev_monick" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="15dp"
+
+                android:text="Monick Évelyn"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="45dp"
+                android:layout_marginEnd="15dp"
+
+                android:text="Desenvolvedora principal, pretende seguir na área  de T.I." />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView6"
+            android:layout_width="360dp"
+
+            android:layout_height="130dp"
+
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginBottom="145dp"
+            app:cardBackgroundColor="@color/marromclarinho"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="134dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/dev_vitoria" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="45dp"
+                android:layout_marginEnd="15dp"
+
+                android:text="Pesquisadora, analista de requisitos e banco de dados" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="15dp"
+
+                android:text="Vitória Ketillyn"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="89dp"
+            android:layout_marginEnd="90dp"
+            android:layout_marginBottom="19dp"
+            android:text="Desenvolvedoras"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/cardView5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

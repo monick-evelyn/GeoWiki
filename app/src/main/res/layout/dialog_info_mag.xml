@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dialog_info_mag"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Magmáticas"
+        android:textSize="25dp"
+        android:textStyle="bold"
+
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="95dp"
+        />
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Trata-se das rochas formadas pelo resfriamento e consolidação do magma terrestre. Embora tenham a mesma origem, as rochas magmáticas apresentam composições distintas, que variam de acordo com o material de que é formado o magma, isto é, da preponderância de elementos que o constituem."
+            android:layout_marginTop="70dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="20dp"
+            android:textSize="15dp"
+            />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Dentro da categoria de rochas magmáticas podemos identificar ainda duas outras classes de rochas, as quais são estabelecidas de acordo com o seu local de formação:"
+            android:layout_marginTop="225dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="20dp"
+            android:textSize="15dp"
+            />
+
+        <Button
+            android:id="@+id/intrusivasButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Intrusivas"
+            android:fontFamily="sans-serif-light"
+            android:backgroundTint="@color/marromescuro"
+            android:layout_marginTop="325dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginBottom="20dp"
+            />
+
+        <Button
+            android:id="@+id/extrusivasButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Extrusivas"
+            android:fontFamily="sans-serif-light"
+            android:backgroundTint="@color/marromescuro"
+            android:layout_marginTop="325dp"
+            android:layout_marginStart="175dp"
+            android:layout_marginBottom="20dp"
+            />
+
+        <Button
+            android:id="@+id/fecharMagButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/marromclarinho"
+            android:background="@drawable/ic_fechar"
+
+            android:layout_marginStart="275dp"
+            android:layout_marginTop="10dp"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

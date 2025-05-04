@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/fundo"
+        app:layout_constraintBottom_toTopOf="@+id/textView10"
+        app:layout_constraintEnd_toEndOf="@+id/textView7"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toTopOf="@+id/textView10"
+        tools:context=".AdicionarActivity">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="365dp"
+
+            android:layout_height="289dp"
+            android:layout_marginStart="23dp"
+            android:layout_marginEnd="23dp"
+
+            android:layout_marginBottom="49dp"
+
+            app:cardBackgroundColor="@color/fundo"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+
+            app:layout_constraintBottom_toTopOf="@+id/textView20"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="98dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="5dp"
+                android:fontFamily="sans-serif-light"
+                android:padding="10dp"
+
+                android:text="Nome:"
+                android:textSize="20sp"
+
+                />
+
+            <EditText
+                android:id="@+id/nomeEditText"
+                android:layout_width="335dp"
+                android:layout_height="75dp"
+
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/redondinho"
+                android:fontFamily="sans-serif-light"
+                android:hint="Digite o nome da rocha"
+                android:inputType="text"
+
+                android:padding="20sp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="130dp"
+                android:fontFamily="sans-serif-light"
+                android:padding="10dp"
+                android:text="Tipo:"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/tipoSpinner"
+                android:layout_width="335dp"
+                android:layout_height="75dp"
+
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="180dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/redondinho"
+
+                android:entries="@array/tipoSpinner"
+                android:padding="20sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
+            android:layout_width="365dp"
+
+            android:layout_height="161dp"
+            android:layout_marginStart="23dp"
+            android:layout_marginEnd="23dp"
+
+
+            android:layout_marginBottom="45dp"
+            app:cardBackgroundColor="@color/fundo"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView21"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="sans-serif-light"
+
+                android:text="Classificação Mineralógica:"
+                android:textSize="20sp"
+
+
+                />
+
+            <EditText
+                android:id="@+id/classificacaoMineEditText"
+                android:layout_width="335dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/redondinho"
+                android:ems="10"
+                android:fontFamily="sans-serif-light"
+                android:hint="Digite a clas. mineralógica"
+
+                android:inputType="text"
+                android:padding="20sp"
+                android:textSize="20sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView3"
+            android:layout_width="363dp"
+
+            android:layout_height="547dp"
+            android:layout_marginStart="23dp"
+            android:layout_marginEnd="25dp"
+
+
+            android:layout_marginBottom="30dp"
+            app:cardBackgroundColor="@color/fundo"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/adicionarButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif-light"
+
+                android:text="Cor:"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/corEditText"
+                android:layout_width="335dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/redondinho"
+                android:ems="10"
+                android:fontFamily="sans-serif-light"
+                android:hint="Digite a cor da rocha"
+                android:inputType="text"
+
+                android:padding="20sp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="140dp"
+                android:fontFamily="sans-serif-light"
+
+                android:text="Textura:"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/texturaEditText"
+                android:layout_width="335dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="175dp"
+                android:background="@drawable/redondinho"
+                android:ems="10"
+                android:fontFamily="sans-serif-light"
+                android:hint="Digite a textura da rocha"
+                android:inputType="text"
+
+                android:padding="20sp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="275dp"
+                android:fontFamily="sans-serif-light"
+
+                android:text="Dureza (escala Mohs):"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/durezaEditText"
+                android:layout_width="335dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="315dp"
+                android:background="@drawable/redondinho"
+                android:ems="10"
+                android:fontFamily="sans-serif-light"
+                android:hint="Digide a dureza em escala Mohs"
+                android:inputType="numberSigned"
+
+                android:padding="20sp"
+                android:textSize="20sp"
+
+                />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="410dp"
+                android:fontFamily="sans-serif-light"
+
+                android:text="Densidade (g/cm³):"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/densidadeEditText"
+                android:layout_width="335dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="450dp"
+                android:background="@drawable/redondinho"
+                android:ems="10"
+                android:fontFamily="sans-serif-light"
+                android:hint="Digite a densidade em g/cm³"
+                android:inputType="numberDecimal"
+
+                android:padding="20sp"
+                android:textSize="20sp" />
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/rochaImageView"
+            android:layout_width="162dp"
+            android:layout_height="138dp"
+            android:layout_marginStart="124dp"
+            android:layout_marginEnd="125dp"
+            android:layout_marginBottom="23dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/camera"
+            app:layout_constraintBottom_toTopOf="@+id/selecionarImgButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/adicionarButton"
+            android:layout_width="200dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="105dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="106dp"
+            android:backgroundTint="#7A6964"
+            android:fontFamily="sans-serif-light"
+            android:text="Adicionar"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView3" />
+
+        <Button
+            android:id="@+id/selecionarImgButton"
+            android:layout_width="295dp"
+            android:layout_height="61dp"
+            android:layout_marginStart="58dp"
+            android:layout_marginEnd="58dp"
+            android:layout_marginBottom="48dp"
+            android:backgroundTint="@color/marromescuro"
+            android:fontFamily="sans-serif"
+            android:text="Selecionar foto"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView18"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/voltarButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginEnd="70dp"
+            android:background="@drawable/ic_arrow_back_24"
+            app:layout_constraintEnd_toStartOf="@+id/textView6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="142dp"
+            android:layout_marginBottom="27dp"
+            android:text="Adicionar"
+            android:textSize="30dp"
+            app:layout_constraintBottom_toTopOf="@+id/rochaImageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="175dp"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="sans-serif-light"
+            android:text="Identificação Geral"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/cardView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="69dp"
+            android:layout_marginBottom="26dp"
+            android:fontFamily="sans-serif-light"
+            android:text="Propriedades Mineralógicas"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/cardView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="23dp"
+            android:layout_marginEnd="152dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="sans-serif-light"
+            android:text="Propriedades Físicas"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/cardView3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>

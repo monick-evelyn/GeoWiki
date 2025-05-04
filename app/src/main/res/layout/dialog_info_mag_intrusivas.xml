@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dialog_info_mag_intrusivas"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rochas Intrusivas"
+            android:textSize="25dp"
+            android:textStyle="bold"
+
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="50dp"
+            />
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text=" São as rochas formadas pelo resfriamento do magma que acontece no interior da litosfera, isto é, em profundidade, sem que haja o processo de erupção desse material para a superfície terrestre."
+            android:layout_marginTop="70dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="20dp"
+            android:textSize="15dp"
+            />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="A consolidação dos minerais dessa rocha se dá de maneira lenta, e, por essa razão, os minerais que se formam nessas rochas são maiores e em muitos casos podem ser observados em sua estrutura."
+            android:layout_marginTop="175dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="20dp"
+            android:textSize="15dp"
+            />
+
+        <Button
+            android:id="@+id/fecharIntrusivaButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/marromclarinho"
+            android:background="@drawable/ic_fechar"
+
+            android:layout_marginStart="275dp"
+            android:layout_marginTop="10dp"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

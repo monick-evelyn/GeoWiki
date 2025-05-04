@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/fundo"
+        app:layout_constraintBottom_toTopOf="@+id/textView10"
+        app:layout_constraintEnd_toEndOf="@+id/textView7"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toTopOf="@+id/textView10"
+        tools:context=".ListaActivity">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="128dp"
+            android:layout_height="111dp"
+            android:layout_marginStart="147dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="147dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.545"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo_sem_texto" />
+
+        <TextView
+            android:id="@+id/nomeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="111dp"
+            android:layout_marginBottom="19dp"
+            android:fontFamily="sans-serif-light"
+            android:text="RochasXXXXX"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/pesquisarSearchView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <SearchView
+            android:id="@+id/pesquisarSearchView"
+            android:layout_width="335dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="38dp"
+            android:layout_marginEnd="38dp"
+            android:layout_marginBottom="29dp"
+            android:background="@drawable/redondinho"
+            android:queryHint="Digite o nome da rocha"
+            app:layout_constraintBottom_toTopOf="@+id/rochasRecyclerView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rochasRecyclerView"
+            android:layout_width="335dp"
+            android:minHeight="700dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="38dp"
+            android:layout_marginEnd="38dp"
+            android:layout_marginBottom="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/voltarConsultarButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginEnd="62dp"
+            android:background="@drawable/ic_arrow_back_24"
+            app:layout_constraintEnd_toStartOf="@+id/imageView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

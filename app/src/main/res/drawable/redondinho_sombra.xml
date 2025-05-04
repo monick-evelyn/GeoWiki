@@ -1,0 +1,17 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Sombra -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#33000000" /> <!-- Sombra leve e transparente -->
+            <corners android:radius="16dp" />  <!-- Bordas arredondadas -->
+        </shape>
+    </item>
+
+    <!-- Fundo branco com bordas arredondadas -->
+    <item android:left="2dp" android:right="2dp" android:top="2dp" android:bottom="2dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/white" /> <!-- Cor do fundo -->
+            <corners android:radius="16dp" /> <!-- Arredondamento -->
+        </shape>
+    </item>
+</layer-list>

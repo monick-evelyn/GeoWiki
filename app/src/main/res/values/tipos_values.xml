@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tipoSpinner">
+        <item>Metamórfica</item>
+        <item>Sedimentar</item>
+        <item>Magmática</item>
+    </string-array>
+</resources>
